@@ -67,6 +67,16 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  ///* New additional fields: 
+  ///* NIS calculation for radar
+  double NIS_radar_;
+
+  ///* NIS calculation for laser
+  double NIS_laser_;
+
+  long long previous_timestamp_;
+  MeasurementPackage previous_measurement_;
+
 
   /**
    * Constructor
